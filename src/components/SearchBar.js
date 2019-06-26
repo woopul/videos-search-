@@ -12,6 +12,7 @@ class SearchBar extends React.Component {
     e.preventDefault();
     this.props.onFormSubmit(this.state.term);
   }
+  
   render() {
     return (
       <div
@@ -19,7 +20,6 @@ class SearchBar extends React.Component {
       >
         <form className="ui form" onSubmit={this.onFormSubmit}>
           <div className="ui category search">
-            {/* <label style={{marginRight:'20px'}}>Search Viedos</label> */}
             <div style={{ display: "flex" }} className="ui icon input">
               <input
                 value={this.state.term}

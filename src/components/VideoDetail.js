@@ -1,6 +1,11 @@
 import React from "react";
 
-const VideoDetail = ({ video }) => {
+const VideoDetail = (
+  { 
+    video,
+    video: { id: { videoId } },
+  }) => {
+    
   if (!video) {
     return (
       <div style={{ height: "50px" }} className="ui segment">
